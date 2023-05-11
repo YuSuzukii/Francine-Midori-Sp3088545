@@ -1,25 +1,24 @@
 public class Funcionarios {
     private String Nomee;
-    private char CPF;
+    private long CPF;
 
-    public Funcionarios(String Al, char CPF) {
-        this.Nomee = Al;
-        this.CPF = 123-2;
+    public Funcionarios(String Nomee, long CPF) {
+        this.Nomee = Nomee;
+        this.CPF = CPF;
     }
     public String getNomee() {
         return Nomee;
     }
 
-    public void setNomee(String nomee) {
-        Nomee = nomee;
+    public void setNomee(String Nomee) {
+        this.Nomee = Nomee;
     }
 
-    public char getCPF() {
+    public long getCPF() {
         return CPF;
     }
 
-    public void setCPF(char CPF) {
+    public void setCPF(long CPF) {
         this.CPF = CPF;
     }
-
 }

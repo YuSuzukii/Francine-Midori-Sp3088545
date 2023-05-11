@@ -1,14 +1,13 @@
+import java.util.List;
+import java.util.ArrayList;
 public class Biblioteca {
     private String nome;
-    private String Dono;
-    private String Funcionários;
-    private String Livros;
-
-    public Biblioteca(String nome, String dono, String funcionários, String livros) {
+    Dono dono;
+    private List<Livros> livros = new ArrayList<>();
+    private List<Funcionarios> funcionarios = new ArrayList<>();
+    public Biblioteca(String nome) {
         this.nome = nome;
-        Dono = dono;
-        Funcionários = funcionários;
-        Livros = livros;
+
     }
 
     public String getNome() {
@@ -19,27 +18,25 @@ public class Biblioteca {
         this.nome = nome;
     }
 
-    public String getDono() {
-        return Dono;
+   public void mostrarlivros(){
+        for(Livros i: livros){
+            System.out.println("Nome do livro: " + i.getTitulo());
+            System.out.println("Autor: "+ i.getAutor());
+            System.out.println("Ano de lançamento: "+ i.getAno());
+        }
+   }
+   public void addLivros(Livros Livros){
+        this.livros.add(Livros);
+   }
+   public void mostrarnomeb(){
+       System.out.println("Nome da biblioteca: "+nome);
+   }
+    public void mostrarfunc(){
+        for(Funcionarios i: funcionarios){
+            System.out.println("Nome do funcionário: " + i.getNomee());
+        }
     }
-
-    public void setDono(String dono) {
-        Dono = dono;
-    }
-
-    public String getFuncionários() {
-        return Funcionários;
-    }
-
-    public void setFuncionários(String funcionários) {
-        Funcionários = funcionários;
-    }
-
-    public String getLivros() {
-        return Livros;
-    }
-
-    public void setLivros(String livros) {
-        Livros = livros;
+    public void addFuncionarios(Funcionarios funcionarios){
+        this.funcionarios.add((Funcionarios) funcionarios);
     }
 }

@@ -3,33 +3,33 @@ public class Livros {
     private String Autor;
     private int Ano;
 
-    public Livros(String Wakawaka, String autor, int ano) {
-        this.Titulo = Wakawaka;
-        this.Autor = autor;
-        this.Ano = 1997;
+    public Livros(String Titulo, String Autor, int ano) {
+        this.Titulo = Titulo;
+        this.Autor = Autor;
+        this.Ano = Ano;
     }
 
-    public String getName() {
+    public String getTitulo() {
         return Titulo;
     }
 
     public void setName(String name) {
-        Titulo = name;
+        this.Titulo = name;
     }
 
     public String getAutor() {
         return Autor;
     }
 
-    public void setAutor(String autor) {
-        Autor = autor;
+    public void setAutor(String Autor) {
+        this.Autor = Autor;
     }
 
     public int getAno() {
         return Ano;
     }
 
-    public void setAno(int ano) {
-        Ano = ano;
+    public void setAno(int Ano) {
+        this.Ano = Ano;
     }
 }

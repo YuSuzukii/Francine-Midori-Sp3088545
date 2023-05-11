@@ -1,8 +1,8 @@
 public class Dono {
     private String nome;
-    private String CPF;
+    private long CPF;
 
-    public Dono(String nome, String CPF) {
+    public Dono(String nome, long CPF) {
         this.nome = nome;
         this.CPF = CPF;
     }
@@ -15,11 +15,15 @@ public class Dono {
         this.nome = nome;
     }
 
-    public String getCPF() {
+    public long getCPF() {
         return CPF;
     }
 
-    public void setCPF(String CPF) {
+    public void setCPF(long CPF) {
         this.CPF = CPF;
     }
+    public void mostrarnome(){
+        System.out.println("Nome do dono: " + nome);
+    }
+
 }
